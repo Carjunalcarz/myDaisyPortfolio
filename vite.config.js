@@ -6,11 +6,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({ command }) => {
   const config = {
     plugins: [react()],
-    base: '/myDaisyPortfolio',
+    base: '/',
   }
 
   if (command !== 'serve') {
-    config.base = '/myDaisyProject/'
+    config.base = '/DaisyUi/'
   }
 
   return config
