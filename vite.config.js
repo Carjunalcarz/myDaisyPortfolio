@@ -9,5 +9,9 @@ export default defineConfig(({ command }) => {
     base: '/myDaisyPortfolio',
   }
 
+  if (command !== 'serve') {
+    config.base = '/myDaisyProject/'
+  }
+
   return config
 })
